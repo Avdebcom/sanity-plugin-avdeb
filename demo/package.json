@@ -1,0 +1,9 @@
+{
+	"name": "sanity-plugin-avdeb-demo",
+	"private": true,
+	"type": "module",
+	"description": "Demo site for sanity-plugin-avdeb: Next.js App Router reading posts from the dev Studio's dataset (node_modules links to the parent package's)",
+	"scripts": {
+		"dev": "next dev --port 3340"
+	}
+}

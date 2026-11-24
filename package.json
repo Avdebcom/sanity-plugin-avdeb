@@ -1,0 +1,98 @@
+{
+	"name": "sanity-plugin-avdeb",
+	"version": "0.1.0",
+	"description": "AVDEB products in Sanity Studio and on your site: Portable Text blocks for grids, carousels and featured products with your affiliate referral code on every link",
+	"type": "module",
+	"license": "MIT",
+	"homepage": "https://avdeb.com/developers/#sanity",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Avdebcom/sanity-plugin-avdeb.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Avdebcom/sanity-plugin-avdeb/issues"
+	},
+	"author": {
+		"name": "AVDEB",
+		"url": "https://avdeb.com/developers/"
+	},
+	"keywords": [
+		"sanity",
+		"sanity-plugin",
+		"portable-text",
+		"affiliate",
+		"affiliate-links",
+		"products",
+		"product-embed",
+		"carousel",
+		"avdeb"
+	],
+	"sideEffects": [
+		"*.css"
+	],
+	"exports": {
+		".": {
+			"types": "./types/index.d.ts",
+			"default": "./src/index.js"
+		},
+		"./render": {
+			"types": "./types/render.d.ts",
+			"default": "./src/render.js"
+		},
+		"./react": {
+			"types": "./types/react.d.ts",
+			"default": "./src/react.js"
+		},
+		"./avdeb.css": "./assets/avdeb.css",
+		"./avdeb.js": "./assets/avdeb.js",
+		"./package.json": "./package.json"
+	},
+	"main": "./src/index.js",
+	"types": "./types/index.d.ts",
+	"files": [
+		"src",
+		"assets",
+		"types/*.d.ts",
+		"README.md",
+		"CHANGELOG.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=20.19"
+	},
+	"peerDependencies": {
+		"@sanity/ui": "^3.1 || ^4",
+		"react": "^19.2",
+		"sanity": "^5 || ^6"
+	},
+	"peerDependenciesMeta": {
+		"@sanity/ui": {
+			"optional": true
+		},
+		"react": {
+			"optional": true
+		},
+		"sanity": {
+			"optional": true
+		}
+	},
+	"scripts": {
+		"build:css": "node scripts/build-css.mjs",
+		"test": "node --test tests/*.test.js",
+		"typecheck": "tsc -p types/tsconfig.json",
+		"dev": "cd studio && sanity dev --port 3333"
+	},
+	"devDependencies": {
+		"@portabletext/react": "^8.0.1",
+		"@portabletext/to-html": "^6.0.0",
+		"@sanity/client": "^8.17.0",
+		"@sanity/ui": "^4.4.12",
+		"@types/react": "^19.3.0",
+		"next": "^16.4.6",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4",
+		"sanity": "^6.25.0",
+		"styled-components": "^6.3.11",
+		"typescript": "^5.9.3"
+	}
+}

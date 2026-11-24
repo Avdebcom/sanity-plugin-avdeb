@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"noEmit": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"target": "ES2022",
+		"jsx": "react-jsx",
+		"skipLibCheck": true,
+		"types": []
+	},
+	"files": ["index.d.ts", "render.d.ts", "react.d.ts", "check.ts"]
+}

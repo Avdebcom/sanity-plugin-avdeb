@@ -1,0 +1,30 @@
+[
+	{
+		"_id": "video-post",
+		"_type": "post",
+		"title": "Small gifts for makers",
+		"body": [
+			{
+				"_type": "block",
+				"_key": "v1",
+				"style": "normal",
+				"markDefs": [],
+				"children": [{ "_type": "span", "_key": "v1s", "text": "Stocking fillers for the makers in your life: stickers for the laptop, a keychain for the keys, all under $20.", "marks": [] }]
+			}
+		]
+	},
+	{
+		"_id": "drafts.video-post",
+		"_type": "post",
+		"title": "Small gifts for makers",
+		"body": [
+			{
+				"_type": "block",
+				"_key": "v1",
+				"style": "normal",
+				"markDefs": [],
+				"children": [{ "_type": "span", "_key": "v1s", "text": "Stocking fillers for the makers in your life: stickers for the laptop, a keychain for the keys, all under $20.", "marks": [] }]
+			}
+		]
+	}
+]
